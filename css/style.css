@@ -860,3 +860,85 @@ a:focus-visible {
     font-size: 13px;
   }
 }
+
+/* Mobile responsive fixes */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container,
+    .page-container,
+    .content-layout,
+    .main-content,
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .container,
+    .page-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .content-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .course-grid,
+    .blog-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .course-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .course-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: clamp(1.7rem, 7vw, 2.3rem);
+        overflow-wrap: anywhere;
+    }
+
+    p,
+    a,
+    button {
+        overflow-wrap: anywhere;
+    }
+}
