@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Development | LearnTech</title>
+
+    <link rel="stylesheet" href="css/course-page.css">
+    <script src="js/course-page.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <span class="brand-logo">L</span>
+            <span>Learn<span class="green">Tech</span></span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="main-menu" id="mainMenu">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="about.html">About</a>
+        </nav>
+
+    </header>
+
+    <main class="page-container">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> /
+            <a href="courses.html">Courses</a> /
+            Web Development
+        </div>
+
+        <!-- Top Course Photo -->
+        <section class="course-hero">
+
+            <div class="course-banner">
+
+                <img
+                    src="images/course-web.jpg"
+                    alt="Web Development Course"
+                    onerror="this.style.display='none'">
+
+                <div class="banner-text">
+
+                    <span class="course-label">
+                        LEARNTECH WEB DEVELOPMENT COURSE
+                    </span>
+
+                    <h1>Web Development</h1>
+
+                    <p>
+                        Learn HTML, CSS and JavaScript to create
+                        modern, responsive and interactive websites.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="course-summary">
+                <span>Beginner Friendly</span>
+                <span>Self-paced Learning</span>
+                <span>Practical Projects</span>
+            </div>
+
+            <div class="course-actions">
+
+                <a href="#purchase" class="btn btn-primary">
+                    Purchase Course
+                </a>
+
+                <a href="#about" class="btn btn-secondary">
+                    About Course
+                </a>
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    id="shareCourse">
+                    Share Course
+                </button>
+
+            </div>
+
+            <p id="shareStatus" class="share-status"></p>
+
+        </section>
+
+        <!-- Main Course Content -->
+        <div class="content-layout">
+
+            <div class="main-content">
+
+                <!-- About Course -->
+                <section class="content-card" id="about">
+
+                    <h2>About This Course</h2>
+
+                    <p>
+                        Web development is the process of creating
+                        websites and web applications.
+                    </p>
+
+                    <p>
+                        In this course, you will learn how HTML
+                        structures a webpage, CSS styles the page,
+                        and JavaScript adds interactive features.
+                    </p>
+
+                    <h3>What You Will Learn</h3>
+
+                    <ul>
+                        <li>HTML elements and webpage structure</li>
+                        <li>Links, images, tables and forms</li>
+                        <li>CSS colours, layouts and typography</li>
+                        <li>Flexbox and responsive web design</li>
+                        <li>JavaScript fundamentals</li>
+                        <li>DOM manipulation and events</li>
+                        <li>Building and publishing a website</li>
+                    </ul>
+
+                </section>
+
+                <!-- Course Lessons -->
+                <section class="content-card" id="lessons">
+
+                    <h2>Course Content</h2>
+
+                    <p>
+                        Follow the lessons in order and practise
+                        each concept by creating webpages.
+                    </p>
+
+                    <ol class="lesson-list">
+
+                        <li>
+                            <strong>Introduction to Web Development</strong>
+                            <p>
+                                Understand websites, browsers,
+                                servers and URLs.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>HTML Fundamentals</strong>
+                            <p>
+                                Learn headings, paragraphs,
+                                links and lists.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Images, Tables and Forms</strong>
+                            <p>
+                                Add images, organise data and
+                                create forms.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>CSS Fundamentals</strong>
+                            <p>
+                                Style webpages using colours,
+                                fonts, margins and padding.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>CSS Layouts</strong>
+                            <p>
+                                Learn Flexbox, Grid and positioning.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Responsive Web Design</strong>
+                            <p>
+                                Make webpages work on mobile,
+                                tablet and desktop screens.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>JavaScript Fundamentals</strong>
+                            <p>
+                                Understand variables, conditions,
+                                loops and functions.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>DOM and Events</strong>
+                            <p>
+                                Respond to button clicks and
+                                update webpage content.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Website Project</strong>
+                            <p>
+                                Create a complete responsive
+                                multi-page website.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>Website Publishing</strong>
+                            <p>
+                                Learn the basics of hosting
+                                and deployment.
+                            </p>
+                        </li>
+
+                    </ol>
+
+                </section>
+
+            </div>
+
+            <!-- Purchase Panel -->
+            <aside class="sidebar">
+
+                <section class="content-card" id="purchase">
+
+                    <h2>Enroll in This Course</h2>
+
+                    <p class="course-price">Coming Soon</p>
+
+                    <p>
+                        Enrollment and online payment will be
+                        available after the payment system is
+                        configured.
+                    </p>
+
+                    <button
+                    
+                        type="button"
+                        class="btn btn-primary full-width"
+                        id="purchaseButton">
+                        Purchase / Enroll
+                    </button>
+
+                    <p class="small-note">
+                        Online payment is not active yet.
+                    </p>
+
+                </section>
+
+                <section class="content-card">
+
+                    <h2>Learning Tips</h2>
+
+                    <ul>
+                        <li>Practise HTML before moving to CSS.</li>
+                        <li>Build small pages for every topic.</li>
+                        <li>Test your website on mobile screens.</li>
+                        <li>Keep your project files organised.</li>
+                    </ul>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            © <span id="year"></span> LearnTech.
+            Learn skills. Build your future.
+        </p>
+    </footer>
+
+</body>
+</html>
